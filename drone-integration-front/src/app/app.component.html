@@ -1,0 +1,33 @@
+<section class="painel">
+  <div>
+    <form>
+      <div class="container">
+        <h1>Controle</h1>
+        <div>
+          <label>Id Drone: </label>
+          <input>
+
+        </div>
+        <div>
+          <label>Latitude: </label>
+          <input>
+          
+        </div>
+        <div>
+          <label>Longitude: </label>
+          <input>
+          
+        </div>
+        <div>
+          <label>Temperatura: </label>
+            <mat-slider  thumbLabel  [displayWith]="formatLabelTemp"  tickInterval="100"  min="-50"  max="100"></mat-slider>        
+        </div>
+        <div>
+          <label>Humidade do Ar: </label>
+            <mat-slider  thumbLabel  [displayWith]="formatLabelHumi"  tickInterval="100"  min="1"  max="100"></mat-slider>                     
+        </div>
+        <button>Ativar rastreamento</button>
+      </div>                 
+    </form>
+  </div>
+</section>
