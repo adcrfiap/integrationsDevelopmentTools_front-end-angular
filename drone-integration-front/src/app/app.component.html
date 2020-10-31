@@ -1,33 +1,36 @@
 <section class="painel">
   <div>
-    <form>
-      <div class="container">
+    <div class="container">
+      <form [formGroup]="form" (ngSubmit)="Drone()">
+
         <h1>Controle</h1>
         <div>
           <label>Id Drone: </label>
-          <input>
+          <input formControlName="idDrone">
 
         </div>
         <div>
           <label>Latitude: </label>
-          <input>
-          
+          <input formControlName="latitude">
+
         </div>
         <div>
           <label>Longitude: </label>
-          <input>
-          
+          <input formControlName="longitude">
+
         </div>
         <div>
           <label>Temperatura: </label>
-            <mat-slider  thumbLabel  [displayWith]="formatLabelTemp"  tickInterval="100"  min="-50"  max="100"></mat-slider>        
+          <mat-slider thumbLabel [displayWith]="formatLabelTempHumi" formControlName="temperatura" tickInterval="100"
+            min="1" max="100"></mat-slider>
         </div>
         <div>
           <label>Humidade do Ar: </label>
-            <mat-slider  thumbLabel  [displayWith]="formatLabelHumi"  tickInterval="100"  min="1"  max="100"></mat-slider>                     
+          <mat-slider thumbLabel [displayWith]="formatLabelTempHumi" formControlName="humidade" tickInterval="100" 
+           min="1" max="100"></mat-slider>
         </div>
-        <button>Ativar rastreamento</button>
-      </div>                 
-    </form>
+      </form>
+      <button type="submit" (click)="Drone()">Ativar rastreamento</button>
+    </div>
   </div>
 </section>
