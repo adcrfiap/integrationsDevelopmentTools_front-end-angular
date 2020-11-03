@@ -2,7 +2,7 @@
 
 ### Passo 1
 - **Clone**
-  - Clonar esse repositório em sua máquina local utilizando a URL `https://github.com/andreAlbuquerqueHub/persistenceMongoDB.git`
+  - Clonar esse repositório em sua máquina local utilizando a URL `https://github.com/adcrfiap/integrationsDevelopmentTools_front-end-angular.git`
 
 ### Passo 2
 - **Configuração**
